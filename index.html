@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +22,7 @@
             <ul class="nav">
                 <li><a href="#home" class="active"><i class="nav-home"></i>Home</a></li>
                 <li><a href="#about"><i class="nav-about"></i>About</a></li>
+                <li><a href="#timeline"><i class="nav-home"></i>Timeline</a></li>
                 <li><a href="#portfolio"><i class="nav-portfolio"></i>Portfolio</a></li>
                 <li><a href="#contact"><i class="nav-contact"></i>Contact</a></li>
             </ul>
@@ -60,14 +63,18 @@
                         </div>
                         <div class="row">
                             <div class="about-info">
-                                <p> Hi! I'm a Toronto-based programmer currently attending The University of Toronto for undergraduate studies. <br> <br> My interests lie in creative expression and tasks that allow for freedom of thinking, but I would always be willing to follow strict guidelines on production. <br>  <br> I love getting hands-on with learning new things!
-                                <br> <br> <br> 3rd place CyberSci Regionals 2022
+                                <p> Hi! I'm a Toronto-based programmer currently attending University of Toronto for Neuroscience and 
+                                    Computer Science. <br> <br> I am incredibly passionate about computer science and its potential
+                                     to make a positive impact on people's lives. My journey in this field began in 2022. Since then, I have fallen in love with the limitless possibilities of programming.<br> 
+                                      <br> What truly drives me is the desire to merge my interests in neuroscience
+                                       and CS. I envision using neurotech to create opportunities for medical 
+                                       and entertainment purposes. 
                                 </p>
                             </div>
                         </div>
                     </div>
             
-                    <div class="skills">
+                    <!-- <div class="skills">
                         <div class="skills-text"> Skills</div>
                         <div class="skills-container">
                             <div class="grid">
@@ -161,10 +168,53 @@
                                     </div>
                                 </div>
 
-                            </div>
-                        </div>
+                            </div> -->
+                        <!-- </div>
+                    </div> -->
+
+            </section>
+            <section>
+            </div>
+            <div class="timeline">
+                <div class="anchor" id="timeline"></div>
+            <ul class="cards">
+                <li style="--accent-color:#16BAC5">
+                    <div class="date">January 2022</div>
+                    <div class="title">First contact</div>
+                    <div class="descr">My initial encounter with programming, specifically through my first language, Python, at the University of Toronto, felt remarkably natural. As I delved into the world of coding, I experienced an immediate sense of alignment with the logic and structure inherent in programming.</div>
+                </li>
+                <li style="--accent-color:#5FBFF9">
+                    <div class="date">July 2022</div>
+                    <div class="title">Website!</div>
+                    <div class="descr">
+                        Embarking on the journey of creating my first website was a thrilling experience that resonated with my creative side.
+                        As I crafted each line of code, the website gradually took shape, capturing my vision and allowing me to showcase my ideas to the world.
                     </div>
-                </div>
+                </li>
+                <li style="--accent-color:#EE964B">
+                    <div class="date">November 2022</div>
+                    <div class="title">The competition begins</div>
+                    <div class="descr">
+                        Participating in both the Newhacks and Cybersci competitions over a single weekend was an exhilarating experience that pushed me to the limits of my abilities. 
+                        It was an honour competing alongside UofTCTF, and we ended up placing third and fifth place at Cybersci 2022! 
+                    </div>
+                </li>
+                <li style="--accent-color:#F2AF29">
+                    <div class="date">January 2023</div>
+                    <div class="title">New beginnings</div>
+                    <div class="descr">Transitioning from neuroscience to computer science and securing a place in the highly competitive CS program at 
+                        the University of Toronto was a defining moment in my academic journey. I dedicated countless hours to self-study, mastering programming languages, and expanding my technical expertise.
+                     UofTHacks X was a nice little break in between.</div>
+                </li>
+                <li style="--accent-color:#F95738">
+                    <div class="date">May 2023</div>
+                    <div class="title">COA Education Java tutor</div>
+                    <div class="descr">Embarking on the role of a Java tutor for a student became a transformative experience where I not only helped them grasp the intricacies of programming but also had the opportunity to reshape their curriculum. 
+                        Teaching is a joy that never ceases to inspire and invigorate me. Witnessing the moment when a student's face lights up with understanding, when they grasp a concept or solve a challenging problem, is an immensely rewarding experience. 
+                    </div>
+                </li>
+            </ul>
+            </div>
             </section>
     
             <section class="portfolio">
@@ -183,9 +233,10 @@
                     <div class="portfolio-item">
                         <div class="inner">
                             <div class="portfolio-img">
-                                <img src="statics/portfolio1.png" alt="" class="pf1">
-                                <a href="https://github.com/michaelzixizhou/django" target="_blank"><p class="img-description"> Created personal website with the Django framework,
-                                    using &nbsp;<span>venv </span>&nbsp; and &nbsp;<span> pip </span>. </p> </a>
+                                <img src="statics/macpaint.png" alt="" class="pf1">
+                                <a href="https://github.com/michaelzixizhou/Mac-Paint-Tool" target="_blank"><p class="img-description"> A MS Paint alternative 
+                                    for MacOS. Built with Python using pygame, this tool allows for drawing, writing text, and 
+                                    pasting images to doodle on!
                             </div>
                         </div>
                     </div>
@@ -229,7 +280,6 @@
                     </div> -->
                     <div class="portfolio-info">
                         <p class="portfolio-text">
-                            A lot more coming soon!
                         </p>
                     </div>
                 </div>
@@ -291,15 +341,17 @@
 
 
     <!-- JS FILES -->
-    <script src="script2.js"></script>
     <script src="typed.js-2.0.12\lib\typed.js"></script>
     <script>
         var typed = new Typed(".typing", {
-            strings: ["", "programming enthusiast", "web developer", "avid learner", "video game enjoyer"],
+            strings: ["", "programmer", "web developer", "avid learner", "video game developer"],
             loop: true,
             typeSpeed: 70,
             BackSpeed: 60,
         })
+        console.log("hi");
     </script>
+    <script src="script.js"></script>
+
 </body>
 </html>

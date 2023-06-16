@@ -26,6 +26,8 @@ background: #555;
 }
 
 html{
+    overflow-x: hidden;
+
     width: 100%;
     position: relative;
     background: #72195A;
@@ -669,6 +671,27 @@ ul li .descr::before {
   bottom: 0.25rem;
 }
 
+@media (max-width: 40rem) {
+    .timeline ul li{
+        white-space: pre-line;
+        height: auto;
+        word-wrap: break-word;
+        width: 350px;
+    }
+    .timeline ul {
+        overflow: hidden;
+    }
+    .timeline .descr{
+        overflow: hidden;
+        width: 100%;
+
+    }
+    .timeline p{
+        overflow: hidden;
+        word-wrap: break-word;
+        white-space: pre-line;
+    }
+}
 @media (min-width: 40rem) {
   ul {
     grid-template-columns: 1fr var(--line-w) 1fr;
@@ -835,9 +858,10 @@ a.nav-about {
 
 /* Responsiveness */
 
-@media (max-width:1199px) {
+@media (max-width:40rem) {
     .sidebar{
         left:-270px;
+        height: 10rem;
     }
     .main-content{
         padding-left: 0;

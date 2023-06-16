@@ -880,7 +880,30 @@ a.nav-about {
     .about .about-image img {
         height: 30vw;
     }
-    
+    .portfolio .portfolio-item {
+        position: relative;
+        display: inline-block;
+        /* flex: 0 0 33.33%;
+        max-width: 33.33%; */
+        right: 85px;
+
+    }
+    .portfolio-img .pf1{
+        width: 400px;
+        height: 300px;
+    }
+    .img-description {
+        width: 400px;
+        height: 300px;
+        left: 100px;
+    }
+    .portfolio-img {
+        width: 400px;
+        height: 300px;
+    }
+    .portfolio .portfolio-info{
+        margin-bottom: 10px;
+    }
 }
 
 
